@@ -1,0 +1,39 @@
+@media all and (max-width:1024px)
+{
+	.code{ margin-bottom: 23px; }
+}
+
+@media all and (max-width:991px)
+{
+	.sothich i{ margin:0 9%;}
+	.right-mean{ height: 1105px; }
+}
+
+@media all and (max-width:768px)
+{
+	.logoCV{ height: 150px; width: 150px; }
+	.right-mean{ height: 1055px; }
+}
+
+@media all and (max-width:640px)
+{
+	/* main left */
+	.left-mean{ width: 99%; }
+	.logoCV{ height: 200px; width: 200px; }
+
+	/* main right */
+	.right-mean{width: 99%; height: 880px; padding-right: 1%;}
+}
+
+@media all and (max-width:480px)
+{
+	.sothich i{ margin: 0 8%; }
+}
+
+@media all and (max-width:320px)
+{
+	.exp-right{ height: 70px; }
+	.exp-right{ height: 70px; }
+	.sothich i{ margin: 0 6%; }
+	.right-mean{width: 99%; height: 930px;}
+}
