@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	font-family: sans-serif;
+}
+/* =================================================================================================== */
+
+
+/*  		<!-- Bắt đầu phần header -->   */
+
+.header {
+    position: fixed;
+    height: 81px;
+    width: 100%;
+    background: #bdadad1a;
+}
+/* Bên trái header */
+.header-left{
+	float: left;
+	height: 81px;
+    width: 30%;
+    line-height: 50px;
+}
+.mylogo {
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    border-radius: 50%;
+}
+.myname {
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+/* Ben phải header */
+.header-right{
+	float: left;
+    width: 70%;
+    height: 81px;
+}
+.danhsach {
+	display: inline-block;
+}
+.danhsach li{
+	display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.danhsach li:first-child{
+	margin-left: 250px;
+}
+.danhsach li:last-child{
+	margin: 0;
+	line-height: 80px;
+}
+
+/* =================================================================================================== */
+
+/*  		<!-- Bắt đầu phần main -->   */
+
+/* --------------- Main 1 --------------- */
+.container{
+	position: relative;
+	margin-top: 81px;
+}
+
+
+
+
+
+
+
+
+
