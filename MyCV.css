@@ -285,7 +285,9 @@ h6 {
     /* Bat dau phan cmt */
     
 .cmt{
-    height: 70%;
+    overflow: hidden;
+    width: 70%;
+    height: 500px;
 }
 
 
