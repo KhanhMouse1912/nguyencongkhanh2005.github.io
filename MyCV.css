@@ -68,6 +68,7 @@
 .main {
     position: relative;
     top: 81px;
+    margin-bottom: 30px;    
 }
 /* --------------- Main 1 --------------- */
 
@@ -240,9 +241,10 @@ h6 {
 
 /* --------------- Main 4 --------------- */
 .main4{
-    height: 400px;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
 }
-
     /* Bat dau phan lien he */
 .wrap-main4{
     padding: 0 5%;
@@ -262,9 +264,64 @@ h6 {
     text-align: center;
     margin-bottom: 30px;
 }
+   
+    /* Bat dau phan cmt */
+    
+.cmt{
+    overflow: hidden;
+    width: 70%;
+    height: auto;
+}
+
+
+/* =================================================================================================== */
+
+/*          <!-- Bắt đầu phần footer -->   */
+.footer{
+    position: relative;
+    height: 100px;
+    top: 81px;
+}
+ /* My hobby */
+.hobby {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.sothich {
+    height: 33px;
+    margin-bottom: 30px;
+}
+
+.sothich ul {
+    float: left;
+    width: 100%;
+}
+
+.sothich ul li{
+    float: left;
+    margin-right: 10%;
+    margin-left: 12%;
+}
+
+.sothich ul li a i{
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid red;
+}
+
+/* fb -  lien he */
+.last{
+    height: 150px;
+    text-align: center;
+    background: #1abc9c;
+}
 
 .ulafter{
     display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 25px;    
 }
 
 .ulafter li{
@@ -280,14 +337,5 @@ h6 {
     line-height: 55px;
     text-align: center;
     color: #1abc9c;
-    background: #ff00000d;
-}    
-    /* Bat dau phan cmt */
-    
-.cmt{
-    overflow: hidden;
-    width: 70%;
-    height: 500px;
-}
-
-
+    background: #fff;
+} 
