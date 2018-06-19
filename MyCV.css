@@ -52,6 +52,11 @@
     margin: 0 40px;
     cursor: pointer;
 }
+
+.danhsach li:hover {
+    font-weight: 600;
+}
+
 .danhsach li:first-child{
 	margin-left: 26%;
     padding-top: 30px;
@@ -309,6 +314,7 @@ h6 {
     font-size: 20px;
     padding: 5px;
     border: 1px solid red;
+    color: #1ABC9C;
 }
 
 /* fb -  lien he */
