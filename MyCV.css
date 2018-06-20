@@ -11,6 +11,7 @@
 /*  		<!-- Bắt đầu phần header -->   */
 
 .header {
+    z-index: 3;
     position: fixed;
     height: 81px;
     width: 100%;
@@ -307,7 +308,23 @@ h6 {
 .sothich ul li{
     float: left;
     margin-right: 10%;
-    margin-left: 12%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.sothich ul li i {
+    font-size: 25px;
+    border: 1px solid #80808059;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.sothich ul li span {
+    display: block;
+    color: #fff;
+    background: #1abc9c;
+    box-shadow: 1px 1px #b2ccbc;
+    padding: 3px 3px;
 }
 
 .sothich ul li a i{
