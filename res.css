@@ -17,7 +17,7 @@
 	.wrap-main4 { padding: 0 2%; }	
 	.contact { width: 20%; }
 	.cmt{ width: 80%; }
-	.fb_ltr { width: 700px!important;}		
+	.fb_ltr { width: 600px!important;}		
 	/* ============ FOOTER ============= */
 }
 
@@ -116,7 +116,8 @@
 	.content { height: 120px;}
 	.thoigian-left{ height: 100px;}
 	.edu { padding-top: 470px; }
-	.fb_ltr { width: 300px!important;}
+	.cmt{ width: 100%; }
+	.fb_ltr { width: 300px!important; margin: 0; padding: 0;}
 }	
 
 
