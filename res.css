@@ -10,7 +10,8 @@
 	.header-right{ width: 80%; }
 
 	/* ============ MAIN ============= */
-
+	.content { height: 120px;}
+	.thoigian-left{ height: 100px;}
 	/* ============ FOOTER ============= */
 }
 
@@ -19,6 +20,11 @@
 	/* ============ HEADER ============= */
 
 	/* ============ MAIN ============= */
+			/* page - two */
+			/* page - three */			
+	.content { height: 130px;}		
+	.thoigian-left{ height: 110px;}	
+	.img { width: 250px; padding-top: 100px;}
 
 	/* ============ FOOTER ============= */
 }
@@ -34,10 +40,34 @@
 	.myname { display: none; }
 
 	/* ============ MAIN ============= */
-
+				/* page - two */
+	.kinangmem { width: 47%; padding: 0 2%; }
+	.skills { width: 40%; float: left; padding: 0px 3%; }
+				/* page - three */
+	.content { height: 120px;}
+	.img-center{ display: none; }
+	.exp{ width: 50%; }
+	.edu{ width: 50%; }
 	/* ============ FOOTER ============= */
 }
 
+@media all and (max-width:680px){
+	/* ============ HEADER ============= */
+
+	/* ============ MAIN ============= */
+				/* page - two */
+	.kinangmem { width: 70%; padding: 0 15%; }
+	.main2 { height: 430px; }
+	.skills { width: 70%; padding: 0 15%; }
+				/* page - three */
+	.exp { width: 70%; margin: 0 15%; }
+	.content { height: 100px; }
+	.thoigian-left{ height: 85px;}
+	.edu { width: 70%; margin: 0 15%; padding-top: 410px;}
+	
+
+	/* ============ FOOTER ============= */
+}
 
 @media all and (max-width:550px)
 {
@@ -47,11 +77,36 @@
 	.danhsach li:last-child { margin-left: 5%; }
 	.danhsach { margin: 0; margin-left: 10%; }
 
+	/* ============ MAIN ============= */
+	.content { height: 100px;}
+	.exp{ width: 98%;  margin: 0 1%; }
+	.edu{ width: 98%; margin: 0 1%; }
+	.exp-edu{ font-size: 19px; }
+	.edu { padding-top: 410px; }
+	/* ============ FOOTER ============= */
+
 }
+
+
+@media all and (max-width:460px){
+	.kinangmem { width: 90%; padding: 0 5%; }
+	.skills { width: 90%; padding: 0 5%; }
+	.content { height: 120px;}
+	.thoigian-left{ height: 100px;}
+	.edu { padding-top: 470px; }
+}	
+
 
 @media all and (max-width:385px){
 	.header{ height: 120px; width: 100%;}
 	.main{ top: 120px; }
 	.header-left{ display: none; }
+
+	/* ============ MAIN ============= */
+	.main2 { height: 550px; }
+	.code { margin-bottom: 20px; }
+	.content { height: 170px;}
+	.edu { padding-top: 630px; }
+	/* ============ FOOTER ============= */
 
 }

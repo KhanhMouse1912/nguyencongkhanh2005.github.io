@@ -15,7 +15,8 @@
     position: fixed;
     height: 81px;
     width: 100%;
-    background: #bdadad1a;
+    background: #353232e0;
+    color: #fff;
 }
 /* Bên trái header */
 .header-left{
@@ -66,7 +67,9 @@
 .danhsach li:last-child{
 	margin: 0;
 }
-
+.danhsach li a {
+    color: #fff;
+}
 /* =================================================================================================== */
 
 /*  		<!-- Bắt đầu phần main -->   */
@@ -211,7 +214,9 @@ h6 {
 .exp {
     height: 50px;
     margin-bottom: 5px;
+    width: 35%;
 }
+.img-center{ width: 30%; float: left; text-align: center; margin-top: 30px; }
 
 .time {
     padding: 0 10%;
@@ -221,6 +226,8 @@ h6 {
     width: 30%;
     float: left;
     text-align: center;
+    border-right: 1px solid #bfb6b6;
+    height: 90px;
 }
 
 .content {
@@ -233,6 +240,8 @@ h6 {
     border: none;
 }
 
+.img{ width: 300px; }
+
 .exp-time {
     margin-left: 5%;
     margin-top: 10px;
@@ -241,10 +250,9 @@ h6 {
 .thoigian-right{
     width: 69%;
     float: left;
-    border-left: 1px solid #2f2b2b40;
-    height: 90px;
 }
 
+.edu { width: 35%; }
 /* --------------- Main 4 --------------- */
 .main4{
     overflow: hidden;
