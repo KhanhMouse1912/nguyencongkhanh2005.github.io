@@ -49,7 +49,7 @@
 
 }
 
-@media all and (max-width:320px){
+@media all and (max-width:385px){
 	.header{ height: 120px; width: 100%;}
 	.main{ top: 120px; }
 	.header-left{ display: none; }
