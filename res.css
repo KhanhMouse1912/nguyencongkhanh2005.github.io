@@ -12,6 +12,12 @@
 	/* ============ MAIN ============= */
 	.content { height: 120px;}
 	.thoigian-left{ height: 100px;}
+
+				/* page four */
+	.wrap-main4 { padding: 0 2%; }	
+	.contact { width: 20%; }
+	.cmt{ width: 80%; }
+	.fb_ltr { width: 700px!important;}		
 	/* ============ FOOTER ============= */
 }
 
@@ -25,7 +31,9 @@
 	.content { height: 130px;}		
 	.thoigian-left{ height: 110px;}	
 	.img { width: 250px; padding-top: 100px;}
-
+	.contact { width: 30%; }
+	.cmt{ width: 70%; }
+	.fb_ltr { width: 500px!important;}	
 	/* ============ FOOTER ============= */
 }
 
@@ -48,6 +56,10 @@
 	.img-center{ display: none; }
 	.exp{ width: 50%; }
 	.edu{ width: 50%; }
+				/* page - four */	
+	.contact { width: 33%; }
+	.cmt{ width: 67%; }
+	.fb_ltr { width: 400px!important;}	
 	/* ============ FOOTER ============= */
 }
 
@@ -65,8 +77,12 @@
 	.thoigian-left{ height: 85px;}
 	.edu { width: 70%; margin: 0 15%; padding-top: 410px;}
 	
-
+			/* page - four */
+	.contact{ width: 80%; padding: 0 10%; }
+	.cmt{ width: 80%; padding: 0 10%; }
 	/* ============ FOOTER ============= */
+	.sothich ul #hobby-li span{ width: 50px; }
+	.sothich ul #hobby-li span:last-child{ margin-left: -10px; }
 }
 
 @media all and (max-width:550px)
@@ -78,13 +94,19 @@
 	.danhsach { margin: 0; margin-left: 10%; }
 
 	/* ============ MAIN ============= */
+			/* page - two */
+
+			/* page - three */	
 	.content { height: 100px;}
 	.exp{ width: 98%;  margin: 0 1%; }
 	.edu{ width: 98%; margin: 0 1%; }
 	.exp-edu{ font-size: 19px; }
 	.edu { padding-top: 410px; }
+			/* page - four */
+	.cmt{ width: 100%; }
 	/* ============ FOOTER ============= */
-
+	.sothich ul #hobby-li span{ width: 40px; }
+	.sothich ul #hobby-li span:last-child{ margin-left: -5px; }
 }
 
 
@@ -94,6 +116,7 @@
 	.content { height: 120px;}
 	.thoigian-left{ height: 100px;}
 	.edu { padding-top: 470px; }
+	.fb_ltr { width: 300px!important;}
 }	
 
 
@@ -107,6 +130,8 @@
 	.code { margin-bottom: 20px; }
 	.content { height: 170px;}
 	.edu { padding-top: 630px; }
+			/* page - four */
+	.contact{ width: 90%; padding: 0 5%; }	
 	/* ============ FOOTER ============= */
 
 }
