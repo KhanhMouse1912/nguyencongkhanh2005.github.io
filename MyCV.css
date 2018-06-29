@@ -21,8 +21,7 @@
 .header-left{
 	float: left;
 	height: 81px;
-    width: 30%;
-    line-height: 50px;
+    width: 20%;
 }
 .mylogo {
     margin-left: 20%;
@@ -32,25 +31,26 @@
     border-radius: 50%;
 }
 .myname {
-    margin-top: 16px;
+    margin-top: 30px;
     font-size: 18px;
 }
 
 /* Ben phải header */
 .header-right{
 	float: left;
-    width: 70%;
+    width: 80%;
     height: 81px;
 }
 .danhsach {
 	display: inline-block;
-    width: 100%;
+    width: 80%;
+    margin-left: 20%;
 }
 .danhsach li{
 	display: inline-block;
     font-size: 15px;
     text-transform: uppercase;
-    margin: 0 40px;
+    margin: 0 5%;
     cursor: pointer;
 }
 
@@ -59,12 +59,12 @@
 }
 
 .danhsach li:first-child{
-	margin-left: 26%;
+	margin-left: 5%;
     padding-top: 30px;
+    width: 70px;
 }
 .danhsach li:last-child{
 	margin: 0;
-	line-height: 80px;
 }
 
 /* =================================================================================================== */
@@ -302,41 +302,44 @@ h6 {
 
 .sothich ul {
     float: left;
-    width: 100%;
+    width: 80%;
+    margin: 0 10%;
 }
 
-.sothich ul li{
+.sothich ul #hobby-li{
     float: left;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 23%;
     text-align: center;
+    height: 70px;
+    width: 7%;
 }
 
-.sothich ul li i {
+.sothich ul #hobby-li:last-child {
+    margin: 0;
+}
+
+.sothich ul #hobby-li i {
     font-size: 25px;
     border: 1px solid #80808059;
     padding: 5px;
     margin-bottom: 3px;
 }
 
-.sothich ul li span {
-    display: block;
+.sothich ul #hobby-li span {
+    display: none;
     color: #fff;
     background: #1abc9c;
     box-shadow: 1px 1px #b2ccbc;
     padding: 3px 3px;
 }
 
-.sothich ul li a i{
-    font-size: 20px;
-    padding: 5px;
-    border: 1px solid red;
-    color: #1ABC9C;
+#hobby-li:hover #listen {
+    display: block;
 }
 
 /* fb -  lien he */
 .last{
-    height: 150px;
+    height: 155px;
     text-align: center;
     background: #1abc9c;
 }

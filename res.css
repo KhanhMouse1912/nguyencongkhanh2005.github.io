@@ -1,39 +1,57 @@
-@media all and (max-width:1024px)
+@media all and (max-width:1110px)
 {
-	.code{ margin-bottom: 23px; }
+	/* ============ HEADER ============= */
+
+	/* header - trai */
+	.header-left{ width: 20%; }
+	.myname { margin-top: 20px; }
+
+	/* header phai */
+	.header-right{ width: 80%; }
+
+	/* ============ MAIN ============= */
+
+	/* ============ FOOTER ============= */
 }
 
-@media all and (max-width:991px)
+@media all and (max-width:965px)
 {
-	.sothich i{ margin:0 9%;}
-	.right-mean{ height: 1105px; }
+	/* ============ HEADER ============= */
+
+	/* ============ MAIN ============= */
+
+	/* ============ FOOTER ============= */
 }
 
-@media all and (max-width:768px)
+@media all and (max-width:852px)
 {
-	.logoCV{ height: 150px; width: 150px; }
-	.right-mean{ height: 1055px; }
+	/* ============ HEADER ============= */
+	
+	.danhsach{ width: 60%; }
+	.danhsach { margin-left: 10%; margin-right: 30%;}
+	.danhsach li { margin-bottom: 10px; }
+	.danhsach li:first-child { padding-top: 18px; }
+	.myname { display: none; }
+
+	/* ============ MAIN ============= */
+
+	/* ============ FOOTER ============= */
 }
 
-@media all and (max-width:640px)
-{
-	/* main left */
-	.left-mean{ width: 99%; }
-	.logoCV{ height: 200px; width: 200px; }
 
-	/* main right */
-	.right-mean{width: 99%; height: 880px; padding-right: 1%;}
+@media all and (max-width:550px)
+{
+	/* ============ HEADER ============= */
+	.header{ height: 100px; width: 100%;}
+	.main{ top: 100px; }
+	.danhsach li:last-child { margin-left: 5%; }
+	.danhsach { margin: 0; margin-left: 10%; }
+
 }
 
-@media all and (max-width:480px)
-{
-	.sothich i{ margin: 0 8%; }
-}
+@media all and (max-width:320px){
+	.header{ height: 120px; width: 100%;}
+	.main{ top: 120px; }
+	.header-left{ display: none; }
 
-@media all and (max-width:320px)
-{
-	.exp-right{ height: 70px; }
-	.exp-right{ height: 70px; }
-	.sothich i{ margin: 0 6%; }
-	.right-mean{width: 99%; height: 930px;}
 }
