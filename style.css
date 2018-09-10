@@ -76,6 +76,86 @@ Profile:	https://themeforest.net/user/3ftheme
   font-weight: 500;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Black.eot");
+  src: url("fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Black.woff") format("woff"), url("fonts/Lato-Black.ttf") format("truetype"), url("fonts/Lato-Black.svg#Lato") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-BlackItalic.eot");
+  src: url("fonts/Lato-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-BlackItalic.woff") format("woff"), url("fonts/Lato-BlackItalic.ttf") format("truetype"), url("fonts/Lato-BlackItalic.svg#Lato") format("svg");
+  font-style: "italic";
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Bold.eot");
+  src: url("fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype"), url("fonts/Lato-Bold.svg#Lato") format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-BoldItalic.eot");
+  src: url("fonts/Lato-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-BoldItalic.woff") format("woff"), url("fonts/Lato-BoldItalic.ttf") format("truetype"), url("fonts/Lato-BoldItalic.svg#Lato") format("svg");
+  font-style: "italic";
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Hairline.eot");
+  src: url("fonts/Lato-Hairline.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Hairline.woff") format("woff"), url("fonts/Lato-Hairline.ttf") format("truetype"), url("fonts/Lato-Hairline.svg#Lato") format("svg");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-HairlineItalic.eot");
+  src: url("fonts/Lato-HairlineItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-HairlineItalic.woff") format("woff"), url("fonts/Lato-HairlineItalic.ttf") format("truetype"), url("fonts/Lato-HairlineItalic.svg#Lato") format("svg");
+  font-style: "italic";
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Italic.eot");
+  src: url("fonts/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Italic.woff") format("woff"), url("fonts/Lato-Italic.ttf") format("truetype"), url("fonts/Lato-Italic.svg#Lato") format("svg");
+  font-style: "italic";
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Light.eot");
+  src: url("fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype"), url("fonts/Lato-Light.svg#Lato") format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-LightItalic.eot");
+  src: url("fonts/Lato-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-LightItalic.woff") format("woff"), url("fonts/Lato-LightItalic.ttf") format("truetype"), url("fonts/Lato-LightItalic.svg#Lato") format("svg");
+  font-style: "italic";
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype"), url("fonts/Lato-Regular.svg#Lato") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
 /*********************
     - 2. General -
 *********************/
@@ -565,7 +645,7 @@ hr {
   color: #fff;
 }
 
-.bg__inner li:last-child {
+.bg__inner li.active {
   color: #ffdd00;
 }
 
@@ -575,11 +655,6 @@ hr {
 }
 
 .bg__inner img {
-  width: 100%;
-}
-
-.products__item a img {
-  height: 176px;
   width: 100%;
 }
 
@@ -632,11 +707,33 @@ hr {
 }
 
 .products__item:hover h3 a {
-  color: #ed3239;
+  color: #604288;
 }
 
 .products__item:hover .item__view {
-  background-color: #ed3239;
+  background-color: #604288;
+}
+
+.products__item a {
+  display: block;
+  overflow: hidden;
+  height: 176px;
+}
+
+.products__item a img {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products__item:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .title {
@@ -725,7 +822,7 @@ hr {
 }
 
 .right__box1--body a:hover {
-  color: #ed3239;
+  color: #3e9e54;
   font-weight: bold;
 }
 
@@ -863,10 +960,8 @@ hr {
 .logo-header {
   position: absolute;
   left: 40px;
-  top: 0px;
+  top: 0;
   z-index: 1;
-  height: 103px;
-  overflow: hidden;
 }
 
 .logo-header a {
@@ -883,7 +978,6 @@ hr {
 
 .contact {
   text-align: right;
-  position: relative;
 }
 
 .contact ul {
@@ -905,7 +999,7 @@ hr {
 }
 
 .contact ul li:first-child:hover {
-  color: #ED3239;
+  color: #604288;
 }
 
 i.fab.fa-facebook-f {
@@ -922,7 +1016,11 @@ i.fab.fa-youtube {
 }
 
 .menu {
-  text-align: right;
+  position: relative;
+}
+
+.menu nav {
+  text-align: center;
 }
 
 .menu ul {
@@ -933,22 +1031,67 @@ i.fab.fa-youtube {
 .menu ul li {
   display: inline-block;
   line-height: 38px;
-  margin-left: 53px;
+  padding: 0 15px;
   font-size: 14px;
   color: #5e5e5e;
   font-weight: bold;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
 .menu ul li:hover {
-  color: #ED3239;
+  color: #604288;
+}
+
+.menu ul li:hover {
+  background: #604288;
+  color: #fff;
+}
+
+.search-header {
+  position: absolute;
+  width: 190px;
+  top: 0px;
+  right: 15px;
+  text-align: right;
+  height: 44px;
+  line-height: 44px;
+}
+
+.search-header input {
+  height: 30px;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: none;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.search-header span {
+  position: absolute;
+  right: 10px;
+  font-size: 15px;
+  z-index: -1;
+  color: #333333ad;
+}
+
+.bg-camket-baohanh {
+  background-color: #f0f0f0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .sanpham__footer {
-  padding: 20px 0 30px;
+  text-align: center;
+  padding: 0px 0 30px;
 }
 
-.sanpham__footer .col-2 h3 {
+.sanpham__footer .col-4 h3 {
   color: #404040;
   font-weight: 700;
   font-size: 15px;
@@ -957,19 +1100,20 @@ i.fab.fa-youtube {
   margin-bottom: 5px;
 }
 
-.sanpham__footer .col-2 a {
+.sanpham__footer .col-4 a, .sanpham__footer .col-4 li {
+  cursor: pointer;
   color: #808080;
   margin-top: 5px;
   line-height: 21px;
 }
 
-.sanpham__footer .col-2 a:hover {
-  color: #ed3239;
+.sanpham__footer .col-4 a:hover, .sanpham__footer .col-4 li:hover {
+  color: #604288;
 }
 
-.sanpham__footer .col-2 .telephone {
-  color: #ed3239;
-  font-weight: 700;
+.sanpham__footer .col-4 .telephone {
+  color: #604288;
+  font-weight: 600;
 }
 
 .banquyen {
@@ -982,6 +1126,35 @@ i.fab.fa-youtube {
   line-height: 50px;
   margin: 0;
   color: #404040;
+}
+
+.click-up span {
+  position: fixed;
+  display: none;
+  bottom: 30px;
+  right: 30px;
+  font-size: 30px;
+  display: block;
+  padding: 6px 15px;
+  cursor: pointer;
+  color: #fff;
+  background: #604288;
+  border: none;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.click-up span:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  background-color: transparent;
+  border: 2px solid #604288;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .slide__home {
@@ -1032,7 +1205,7 @@ i.fab.fa-youtube {
 }
 
 .slide__home .owl-theme .owl-dots .owl-dot.active span, .slide__home .owl-theme .owl-dots .owl-dot:hover span {
-  background: #ed3239;
+  background: #604288;
 }
 
 .slide__home .owl-theme .owl-dots .owl-dot span {
@@ -1126,7 +1299,7 @@ i.fab.fa-youtube {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .text-content__home h5 {
@@ -1150,7 +1323,6 @@ i.fab.fa-youtube {
 .sanpham__home {
   color: #333333;
   padding: 20px 0 40px;
-  background-color: #f0f0f0;
 }
 
 .menu-res {
@@ -1232,14 +1404,14 @@ i.fab.fa-youtube {
   border-radius: 25px;
   border: none;
   padding: 0px 30px;
-  background: #ed3239;
+  background: #3e9e54;
   color: #fff;
   font-size: 18px;
   line-height: 50px;
 }
 
 .address__lienhe {
-  padding-left: 100px;
+  margin-bottom: 30px;
   font-size: 15px;
 }
 
@@ -1252,13 +1424,34 @@ i.fab.fa-youtube {
   padding-left: 40px;
 }
 
-.tintuc__gioithieu {
-  width: 25%;
-  padding: 0 5px;
+.map__lienhe iframe {
+  width: 100%;
+  height: 399px;
+  border: 0;
+}
+
+.wrap-lienhe .contact__lienhe label:last-child {
+  font-size: 14px;
+  color: #ed3239;
+  padding-left: 5px;
+  position: absolute;
+  margin: 7px 0;
+}
+
+.name__lienhe {
+  margin-bottom: 20px;
+}
+
+.sodienthoai__lienhe, .email__lienhe {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.yeucausanpham__lienhe {
+  padding-top: 10px;
 }
 
 .content__gioithieu {
-  width: 75%;
   padding: 0 15px 0 15px;
   background: #fff;
   color: #555555;
@@ -1291,19 +1484,42 @@ i.fab.fa-youtube {
   text-align: left;
 }
 
-.content__gioithieu__row li {
-  color: #555555;
-  font-size: 14px;
-  line-height: 23px;
-  letter-spacing: 0.5px;
-  margin-bottom: 10px;
-  list-style: circle;
-  margin-left: 15px;
+.content__gioithieu__left {
+  width: 40%;
+  float: left;
+  text-align: center;
+  padding-top: 50px;
 }
 
-.content__gioithieu__row h4 {
-  font-weight: 400;
-  margin: 10px 0;
+.content__gioithieu__right {
+  width: 60%;
+  float: right;
+  line-height: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+}
+
+.content__gioithieu__right strong {
+  color: #000080;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.content__gioithieu__right ul {
+  list-style-type: disc;
+}
+
+.content__gioithieu__right li {
+  color: #555555;
+  font-size: 14px;
+}
+
+.content__gioithieu__right li a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .content__gioithieu__video {
@@ -1390,15 +1606,15 @@ i.fab.fa-youtube {
   font-size: 15px;
 }
 
-.kinhthua__gioithieu {
+.kinhthua__gioithieu, .thuonghieu__gioithieu {
   color: #000080;
   font-size: 16px;
   font-style: italic;
 }
 
-.thuonghieu__gioithieu {
-  font-size: 15px;
-  color: #555;
+.kinhthua__gioithieu a, .thuonghieu__gioithieu a {
+  text-decoration: underline;
+  color: #ed3239;
 }
 
 .products {
@@ -1457,48 +1673,70 @@ i.fab.fa-youtube {
   display: none;
 }
 
+.products__filter input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 20px auto 10px auto;
+  height: 38px;
+  font-size: 24px;
+  line-height: 38px;
+  background-color: #808080;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.products__filter input[type="submit"]:hover {
+  background-color: #3e9e54;
+}
+
+.products__filter__inner {
+  padding-left: 6px;
+}
+
 .products__filter__inner h3 {
   margin-top: 14px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 300;
   line-height: 1;
-  padding-left: 6px;
   padding-bottom: 6px;
   color: #1f2b7f;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.products__filter__inner li {
-  margin-top: 4px;
-  line-height: 24px;
-}
-
-.products__filter__inner a {
-  display: block;
+.products__filter__inner label {
+  cursor: pointer;
   font-size: 14px;
-  color: #000;
-  margin-left: 6px;
+  display: block;
 }
 
-.products__filter__inner a span {
+.products__filter__inner label span {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   border: 1px solid #ccc;
-  vertical-align: middle;
+  background-color: transparent;
   margin-right: 10px;
 }
 
-.products__filter__inner a span i {
-  vertical-align: super;
-  color: #4267b2;
-  font-size: 12px;
+.products__filter__inner label span i {
   visibility: hidden;
+  color: #2636a3;
 }
 
-.products__filter__inner a span i.check-active {
+.products__filter__inner input[type="checkbox"] {
+  display: none;
+}
+
+.products__filter__inner input[type="checkbox"]:checked + label {
+  color: #2636a3;
+}
+
+.products__filter__inner input[type="checkbox"]:checked + label i {
   visibility: visible;
 }
 
@@ -1914,6 +2152,10 @@ i.fab.fa-youtube {
   background-color: #f0f0f0;
 }
 
+#tintucchitiet .content__gioithieu {
+  width: 75%;
+}
+
 #tintucchitiet .tintucchitiet {
   padding-top: 25px;
 }
@@ -1937,6 +2179,10 @@ i.fab.fa-youtube {
 
 #tintucchitiet .tintuc__content .tintuc__content__src {
   text-align: right;
+}
+
+#tintucchitiet .tintuc__gioithieu {
+  width: 25%;
 }
 
 .hethong {
@@ -2113,7 +2359,7 @@ i.fab.fa-youtube {
 }
 
 .tin__tuc--left li:hover {
-  background-color: #0a61ad;
+  background-color: #3e9e54;
 }
 
 .tin__tuc--left li:hover a {
@@ -2216,6 +2462,11 @@ i.fab.fa-youtube {
   #lienhe .row {
     margin: 0;
   }
+  #gioithieu .container,
+  .products .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   #tin__tuc .container {
     padding: 0 15px;
   }
@@ -2257,18 +2508,6 @@ i.fab.fa-youtube {
   #hethong .container_1140 {
     padding: 0 15px;
   }
-}
-
-@media screen and (max-width: 1024px) {
-  #home .centent-sanpham .row {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #hethong .container_1140 {
-    padding: 0 15px;
-  }
   #hethongdetail .container_1230 {
     padding: 0;
   }
@@ -2280,12 +2519,6 @@ i.fab.fa-youtube {
   }
   #home .centent-sanpham .products__item {
     padding: 0;
-  }
-  #footer .camket-baohanh li {
-    padding: 0 15px;
-  }
-  #footer .camket-baohanh li:first-child {
-    margin-left: 10px;
   }
   #footer .sanpham__footer .row {
     margin: 0;
@@ -2299,19 +2532,15 @@ i.fab.fa-youtube {
   #header .menu ul li {
     margin-left: 30px;
   }
-  #footer .bg-camket-baohanh {
-    text-align: left;
-  }
-  #home .text-content__home, #home .whoarewe {
-    width: 100%;
-  }
   .p-detail__path li {
     margin-left: 0;
   }
-  #gioithieu .right__box3, #tintucchitiet .right__box3 {
+  #gioithieu .right__box3,
+  #tintucchitiet .right__box3 {
     line-height: 20px;
   }
-  #gioithieu .right__box3 .product, #tintucchitiet .right__box3 .product {
+  #gioithieu .right__box3 .product,
+  #tintucchitiet .right__box3 .product {
     float: none;
     position: relative;
     top: unset;
@@ -2323,7 +2552,8 @@ i.fab.fa-youtube {
     margin-left: auto;
     margin-right: auto;
   }
-  #gioithieu .right__box3 .product__infor, #tintucchitiet .right__box3 .product__infor {
+  #gioithieu .right__box3 .product__infor,
+  #tintucchitiet .right__box3 .product__infor {
     width: 100%;
     float: none;
     padding-left: 15px;
@@ -2370,13 +2600,6 @@ i.fab.fa-youtube {
   .products__right .col-4 {
     width: 50%;
   }
-  #footer .camket-baohanh {
-    text-align: left;
-  }
-  #footer .camket-baohanh li:nth-child(3),
-  #footer .camket-baohanh li:first-child {
-    margin-left: 15px;
-  }
   #home .centent-sanpham .col-3 {
     width: 33.333%;
   }
@@ -2389,8 +2612,8 @@ i.fab.fa-youtube {
   #header .menu ul li {
     margin-left: 30px;
   }
-  #lienhe .address__lienhe {
-    padding-left: 15px;
+  #header .search-header {
+    width: 155px;
   }
   #hethongdetail .hethong__search {
     width: 50%;
@@ -2426,10 +2649,10 @@ i.fab.fa-youtube {
     padding: 0;
     width: 200px;
     z-index: 3;
-    background: #ed3239;
+    background: #3e9e54;
     text-align: center;
     right: 15px;
-    top: 78px;
+    top: 44px;
   }
   #header .menu ul li {
     color: #fff;
@@ -2440,21 +2663,19 @@ i.fab.fa-youtube {
   #header .contact ul {
     padding-right: 15px;
   }
-  #footer .camket-baohanh ul {
-    padding: 0 15px;
+  #header .search-header {
+    right: 55px;
   }
   #footer .sanpham__footer .row {
     margin: 0;
   }
-  #footer .sanpham__footer .row .col-2 {
-    width: 33.333%;
-    margin-bottom: 15px;
+  #home .whoarewe, #home .text-content__home {
+    width: 100%;
+    margin-bottom: 20px;
   }
-  #footer .sanpham__footer .row .col-2:nth-child(4), #footer .sanpham__footer .row .col-2:nth-child(5) {
-    width: 50%;
-  }
-  #lienhe .address__lienhe {
-    padding-left: 15px;
+  #lienhe .col-6 {
+    width: 100%;
+    margin-bottom: 30px;
   }
   .p-detail__video iframe {
     height: 350px;
@@ -2473,39 +2694,48 @@ i.fab.fa-youtube {
     width: 100%;
     float: unset;
   }
-  #gioithieu .tintuc__gioithieu, #tintucchitiet .tintuc__gioithieu {
+  #gioithieu .tintuc__gioithieu,
+  #tintucchitiet .tintuc__gioithieu {
     width: 100%;
     float: none;
     margin-top: 50px;
   }
-  #gioithieu .content__gioithieu, #tintucchitiet .content__gioithieu {
+  #gioithieu .content__gioithieu,
+  #tintucchitiet .content__gioithieu {
     width: 100%;
     float: none;
   }
-  #gioithieu .content__gioithieu article h2, #tintucchitiet .content__gioithieu article h2 {
+  #gioithieu .content__gioithieu article h2,
+  #tintucchitiet .content__gioithieu article h2 {
     text-align: center;
     padding-top: 25px;
   }
-  #gioithieu .right__box2 img, #tintucchitiet .right__box2 img {
+  #gioithieu .right__box2 img,
+  #tintucchitiet .right__box2 img {
     width: unset;
   }
-  #gioithieu .right__box3 li, #tintucchitiet .right__box3 li {
+  #gioithieu .right__box3 li,
+  #tintucchitiet .right__box3 li {
     padding: 30px 15px;
     margin-top: 25px;
     float: left;
     width: 49%;
     border: 1px solid #ccc;
   }
-  #gioithieu .right__box3 ul, #tintucchitiet .right__box3 ul {
+  #gioithieu .right__box3 ul,
+  #tintucchitiet .right__box3 ul {
     overflow: hidden;
   }
-  #gioithieu .right__box3 ul li:nth-child(2n):not(:first-child), #tintucchitiet .right__box3 ul li:nth-child(2n):not(:first-child) {
+  #gioithieu .right__box3 ul li:nth-child(2n):not(:first-child),
+  #tintucchitiet .right__box3 ul li:nth-child(2n):not(:first-child) {
     margin-left: 2%;
   }
-  #gioithieu .right__box4, #tintucchitiet .right__box4 {
+  #gioithieu .right__box4,
+  #tintucchitiet .right__box4 {
     display: none;
   }
-  #gioithieu .content__gioithieu__video iframe, #tintucchitiet .content__gioithieu__video iframe {
+  #gioithieu .content__gioithieu__video iframe,
+  #tintucchitiet .content__gioithieu__video iframe {
     height: 375px;
   }
   #tin__tuc .right__box3 .product {
@@ -2539,9 +2769,6 @@ i.fab.fa-youtube {
 }
 
 @media screen and (max-width: 667px) {
-  #footer .camket-baohanh li {
-    padding: 0 20px;
-  }
   #home .centent-sanpham .col-3 {
     width: 50%;
   }
@@ -2567,9 +2794,6 @@ i.fab.fa-youtube {
 }
 
 @media screen and (max-width: 640px) {
-  #footer .camket-baohanh li {
-    padding: 0 10px;
-  }
   #lienhe .col-6 {
     width: 100%;
   }
@@ -2596,9 +2820,16 @@ i.fab.fa-youtube {
     transition: .3s;
     overflow: hidden;
   }
+  .products__filter input[type="submit"] {
+    display: none;
+  }
   .products__filter__inner {
     width: 33.33%;
     float: left;
+  }
+  .products__filter__inner.products__filter__inner--modify {
+    max-height: 210px;
+    overflow-y: scroll;
   }
   .products__filter__icon {
     display: block;
@@ -2637,11 +2868,26 @@ i.fab.fa-youtube {
   .news .heading {
     font-size: 18px;
   }
+  .news__list {
+    overflow: hidden;
+  }
   .news__list__item {
     width: 50%;
     float: left;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .news__list__item h3 a {
+    height: 34px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+  .news__list__item:nth-child(2n+1):not(:first-child) {
+    clear: both;
   }
   .content__gioithieu__left {
     width: 100%;
@@ -2664,14 +2910,6 @@ i.fab.fa-youtube {
 }
 
 @media screen and (max-width: 568px) {
-  #footer .camket-baohanh li {
-    display: block;
-    text-align: center;
-    border: none;
-  }
-  #footer .sanpham__footer .row .col-2 {
-    width: 50%;
-  }
   #home .text-content__home h5 {
     font-size: 14px;
   }
@@ -2681,10 +2919,12 @@ i.fab.fa-youtube {
   .content__gioithieu__video iframe {
     height: 350px;
   }
-  #gioithieu .right__box3 li, #tintucchitiet .right__box3 li {
+  #gioithieu .right__box3 li,
+  #tintucchitiet .right__box3 li {
     padding: 25px 15px;
   }
-  #gioithieu .right__box3 .product, #tintucchitiet .right__box3 .product {
+  #gioithieu .right__box3 .product,
+  #tintucchitiet .right__box3 .product {
     position: relative;
     top: unset;
     -webkit-transform: unset;
@@ -2695,7 +2935,8 @@ i.fab.fa-youtube {
     float: none;
     width: 100%;
   }
-  #gioithieu .right__box3 .product__infor, #tintucchitiet .right__box3 .product__infor {
+  #gioithieu .right__box3 .product__infor,
+  #tintucchitiet .right__box3 .product__infor {
     width: 100%;
     float: none;
     text-align: center;
@@ -2731,7 +2972,7 @@ i.fab.fa-youtube {
   }
   #tin__tuc .news__list .img,
   #tin__tuc .news__list--infor {
-    padding: unset;
+    padding: 5px;
   }
   #hethong .hethong__store1 {
     width: 100%;
@@ -2783,6 +3024,10 @@ i.fab.fa-youtube {
     width: 100%;
     text-align: center;
   }
+  #footer .col-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   #hethong .hethong__search--inner {
     width: 80%;
   }
@@ -2818,13 +3063,16 @@ i.fab.fa-youtube {
   }
   #header .logo-header {
     left: 15px;
-    top: 10px;
   }
   #header .logo-header img {
     height: 50px;
+    margin-top: 10px;
   }
   #home .centent-sanpham .col-3 {
     width: 100%;
+  }
+  .p-detail__row .title h1 {
+    font-size: 24px;
   }
   .products__right .col-4 {
     width: 100%;
@@ -2838,21 +3086,33 @@ i.fab.fa-youtube {
   .products__right .col-4 .p-detail__inner li {
     width: 100%;
   }
-  #gioithieu .right__box3 ul li, #tintucchitiet .right__box3 ul li {
+  #gioithieu .right__box3 ul li,
+  #tintucchitiet .right__box3 ul li {
     width: 100%;
   }
-  #gioithieu .right__box3 ul li:nth-child(2n):not(:first-child), #tintucchitiet .right__box3 ul li:nth-child(2n):not(:first-child) {
+  #gioithieu .right__box3 ul li:nth-child(2n):not(:first-child),
+  #tintucchitiet .right__box3 ul li:nth-child(2n):not(:first-child) {
     margin-left: 0;
     border-left: 1px solid #ccc;
   }
-  #gioithieu .content__gioithieu__left, #tintucchitiet .content__gioithieu__left {
+  #gioithieu .content__gioithieu__left,
+  #tintucchitiet .content__gioithieu__left {
     display: none;
   }
-  #gioithieu .content__gioithieu__right, #tintucchitiet .content__gioithieu__right {
+  #gioithieu .content__gioithieu__right,
+  #tintucchitiet .content__gioithieu__right {
     width: 100%;
   }
-  #gioithieu .content__gioithieu__video iframe, #tintucchitiet .content__gioithieu__video iframe {
+  #gioithieu .content__gioithieu__video iframe,
+  #tintucchitiet .content__gioithieu__video iframe {
     height: 250px;
+  }
+  .p-detail__row--col1 .col1__infor {
+    left: 10px;
+    right: 0;
+  }
+  .p-detail__row--col1 .col1__infor h3 {
+    font-size: 20px;
   }
   #hethong .hethong__search--inner {
     width: 90%;
@@ -2873,6 +3133,13 @@ i.fab.fa-youtube {
   #hethong .hethong__search--inner {
     width: 100%;
   }
+  #hethong .hethong__mien--box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #hethong .hethong__mien li {
+    width: 50%;
+  }
   #hethongdetail .hethong__search {
     width: 100%;
   }
@@ -2883,12 +3150,6 @@ i.fab.fa-youtube {
     clear: unset;
   }
   #hethongeach .hethong__search {
-    width: 100%;
-  }
-  #footer .sanpham__footer .row .col-2 {
-    width: 100%;
-  }
-  #footer .sanpham__footer .row .col-2:nth-child(4), #footer .sanpham__footer .row .col-2:nth-child(5) {
     width: 100%;
   }
   #home .title h1 {
@@ -2907,12 +3168,6 @@ i.fab.fa-youtube {
 }
 
 @media screen and (max-width: 320px) {
-  #footer .camket-baohanh ul {
-    padding: 0;
-  }
-  #footer .sanpham__footer {
-    text-align: center;
-  }
   .products__filter div:nth-child(3n+2):not(:nth-child(2)) {
     clear: unset;
   }
