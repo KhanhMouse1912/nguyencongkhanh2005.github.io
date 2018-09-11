@@ -52,7 +52,7 @@
             </div>
             <div class="menu">
               <nav>
-                <ul>
+                <ul class="menu__header">
                   <li><a href="home.html">Trang chủ</a></li>
                   <li><a href="gioithieu.html">Giới thiệu</a></li>
                   <li><a href="sanpham.html">Sản phẩm</a></li>
@@ -60,7 +60,34 @@
                 </ul>
               </nav>
               <div class="search-header">
-                <input type="text" placeholder="Tìm kiếm" id="search"/><span><i class="fas fa-search"></i></span>
+                <div class="hethong__search">
+                  <form action="" method="post" id="search-form">
+                    <div class="hethong__search--inner">
+                      <div class="select__top"> 
+                        <select id="select" name="" data-placeholder="place holder">
+                          <option selected="selected" value="Tìm kiếm ...">Tìm kiếm ...</option>
+                          <option value="Phòng Khách">Phòng Khách</option>
+                          <option value="Phòng Ngủ">Phòng Ngủ</option>
+                          <option value="Phòng Ăn">Phòng Ăn</option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                        </select>
+                      </div>
+                      <button type="button">Tìm kiếm</button>
+                      <div class="clear-fix"></div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
             <div class="menu-res"><i class="fas fa-bars"></i></div>

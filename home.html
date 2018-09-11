@@ -19,7 +19,7 @@
 <!-- End: news--><!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Trang chủ</title>
+    <title>Trang chủ - Nội Thất Bình Phú</title>
     <title>Themes</title>
     <meta charset="utf-8"/>
     <meta name="description" content="The description"/>
@@ -53,7 +53,7 @@
             </div>
             <div class="menu">
               <nav>
-                <ul>
+                <ul class="menu__header">
                   <li><a href="home.html">Trang chủ</a></li>
                   <li><a href="gioithieu.html">Giới thiệu</a></li>
                   <li><a href="sanpham.html">Sản phẩm</a></li>
@@ -61,7 +61,34 @@
                 </ul>
               </nav>
               <div class="search-header">
-                <input type="text" placeholder="Tìm kiếm" id="search"/><span><i class="fas fa-search"></i></span>
+                <div class="hethong__search">
+                  <form action="" method="post" id="search-form">
+                    <div class="hethong__search--inner">
+                      <div class="select__top"> 
+                        <select id="select" name="" data-placeholder="place holder">
+                          <option selected="selected" value="Tìm kiếm ...">Tìm kiếm ...</option>
+                          <option value="Phòng Khách">Phòng Khách</option>
+                          <option value="Phòng Ngủ">Phòng Ngủ</option>
+                          <option value="Phòng Ăn">Phòng Ăn</option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                        </select>
+                      </div>
+                      <button type="button">Tìm kiếm</button>
+                      <div class="clear-fix"></div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
             <div class="menu-res"><i class="fas fa-bars"></i></div>
@@ -72,7 +99,6 @@
       <section id="home">
         <section class="slide__home">
           <div class="owl-carousel owl-theme">
-            <div class="item"><a href="#"><img src="images/slide11.jpg" alt="slide1"/></a></div>
             <div class="item"><a href="#"><img src="images/slide12.jpg" alt="slide2"/></a></div>
             <div class="item"><a href="#"><img src="images/slide13.jpg" alt="slide3"/></a></div>
             <div class="item"><a href="#"><img src="images/slide14.jpg" alt="slide4"/></a></div>
@@ -85,7 +111,7 @@
             <div class="title title-wrap">
               <h1>CHÚNG TÔI LÀ AI</h1>
             </div>
-            <div class="whoarewe fleft"><a href="#"><img src="images/gioithieu.jpg" alt="k_gioithieu"/></a></div>
+            <div class="whoarewe fleft"><a href="gioithieu.html"><img src="images/gioithieu.jpg" alt="k_gioithieu"/></a></div>
             <div class="text-content__home fleft">
               <h4>Huyện Thạch Thất với truyền thống lâu đời về sản xuất đồ gỗ nội thất, hàng thủ công mỹ nghệ… Chúng tôi có trách nhiệm góp phần xây dựng và phát triển địa phương bằng việc khẳng định thương hiệu chất lượng sản phẩm đồ gỗ Thạch Thất, từ đó tạo hàng ngàn công việc cho lao động địa phương, bên cạnh đó chúng tôi còn trực tiếp đóng góp vào ngân sách hàng năm.</h4>
               <h3>GIÁ TRỊ CỐT LÕI:</h3>
@@ -94,11 +120,11 @@
                 <h5> <strong>Tâm:</strong><span> Tất cả các hành động đều phải thượng tôn pháp luật, luôn bồi dưỡng, trau dồi và rèn luyện đạo đức nghề nghiệp. Mỗi sản phẩm sản xuất ra là được trau chuốt tỷ mỷ từng cm và đảm bảo công năng sử dụng lâu dài.</span></h5>
                 <h5><strong>Tốc:</strong><span> Cam kết cung cấp sản phẩm đến người sử dụng nhanh nhất, chính xác nhất với chất lượng đúng theo đơn hàng.</span></h5>
                 <h5><strong>Tốt:</strong><span> Giá bán sản phẩm được chúng tôi xây dựng dựa trên giá vốn hàng bán và chi phí hoạt động tối thiểu, cùng lợi nhuận định mức chấp nhận được trên cơ sở đã so sánh với giá sản phẩm tương đương trên thị trường. Chúng tôi cam kết giá cả tốt hơn các nhà phân phối khác.</span></h5>
-              </article>
+              </article><a href="gioithieu.html"><span>Xem thêm</span><i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="clearfix"></div>
           </div>
-          <section class="sanpham__home">
+          <section class="sanpham__home phongkhach__home">
             <div class="container">
               <div class="title title-wrap">
                 <h1>Phòng khách</h1>
@@ -157,7 +183,7 @@
               </div>
             </div>
           </section>
-          <section class="sanpham__home">
+          <section class="sanpham__home phongngu__home">
             <div class="container">
               <div class="title title-wrap">
                 <h1>Phòng ngủ</h1>
@@ -165,49 +191,49 @@
               <div class="centent-sanpham">
                 <div class="row">
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/slide16.jpg" alt="Bộ bàn ăn"/></a>
+                    <div class="products__item"><a href="chitietsanpham.html" title="Bộ bàn ăn"><img src="images/anh4.png" alt="Bộ bàn ăn"/></a>
                       <h3><a href="chitietsanpham.html" title="Bộ bàn ăn">Bộ bàn ăn</a></h3>
                       <p class="item__price">Giá chỉ từ: <span>13.990.000<sup>đ</sup></span></p><a class="item__view" href="chitietsanpham.html" title="Xem chi tiết">XEM THÊM </a>
                     </div>
@@ -216,7 +242,7 @@
               </div>
             </div>
           </section>
-          <section class="sanpham__home">
+          <section class="sanpham__home phongan__home">
             <div class="container">
               <div class="title title-wrap">
                 <h1>Phòng ăn</h1>
@@ -275,7 +301,7 @@
               </div>
             </div>
           </section>
-          <section class="sanpham__home">
+          <section class="sanpham__home cacloaikhac__home">
             <div class="container">
               <div class="title title-wrap">
                 <h1>Các loại khác</h1>
